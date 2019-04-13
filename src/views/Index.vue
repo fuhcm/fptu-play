@@ -56,7 +56,7 @@
       </div>
     </div>
 
-    <v-snackbar v-model="snackbar" bottom color="error" :timeout="100000">
+    <v-snackbar v-model="snackbar" bottom color="error" :timeout="2000">
       <span>
         <v-icon style="font-size: 1.5rem;" color="white">error</v-icon>
       </span>
