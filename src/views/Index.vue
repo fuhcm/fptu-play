@@ -168,7 +168,7 @@ export default {
           font-weight: bold;
         }
 
-        input {
+        input.v-text-field__slot {
           color: #333;
           text-align: center;
           font-weight: bold;
