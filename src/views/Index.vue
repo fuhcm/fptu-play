@@ -168,12 +168,14 @@ export default {
           font-weight: bold;
         }
 
-        input.v-text-field__slot {
-          color: #333;
-          text-align: center;
-          font-weight: bold;
-          font-size: 1.5rem;
-          line-height: 50px;
+        .v-text-field__slot {
+          input {
+            color: #333;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+            /* line-height: 50px; */
+          }
         }
 
         .v-text-field__details {
