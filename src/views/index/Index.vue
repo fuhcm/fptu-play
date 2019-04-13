@@ -40,9 +40,9 @@
                 :placeholder="pinValid ? 'Nickname' : 'Game PIN'"
                 solo
               ></v-text-field>
-              <v-btn type="submit" block large>{{
-                pinValid ? "OK, go!" : "Enter"
-              }}</v-btn>
+              <v-btn type="submit" block large>
+                {{ pinValid ? "OK, go!" : "Enter" }}
+              </v-btn>
             </form>
           </div>
         </div>
