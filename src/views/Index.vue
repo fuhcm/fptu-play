@@ -165,14 +165,14 @@ export default {
           color: white;
           text-transform: capitalize;
           font-size: 1.5rem;
-          font-weight: bold;
+          font-weight: 700;
         }
 
         .v-text-field__slot {
           input {
             color: #333;
             text-align: center;
-            font-weight: bold;
+            font-weight: 700;
             font-size: 1.5rem;
             /* line-height: 50px; */
           }
@@ -192,6 +192,7 @@ export default {
           margin: 0 0 10px;
           font-family: Montserrat, sans-serif;
           font-size: 1rem;
+          font-weight: 500;
           letter-spacing: normal;
           text-align: center;
           background-color: transparent;
@@ -199,6 +200,11 @@ export default {
 
         a {
           color: #fff;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }
