@@ -67,6 +67,7 @@
 
 <script>
 import { setTimeout } from "timers";
+
 export default {
   data() {
     return {
@@ -151,8 +152,7 @@ export default {
           .logo-center-block {
             width: 255px;
             height: 120px;
-            background: url(https://i.imgur.com/HmtfpAb.png) center/contain
-              no-repeat;
+            background: url(../assets/logo.png) center/contain no-repeat;
 
             span {
               display: none;
