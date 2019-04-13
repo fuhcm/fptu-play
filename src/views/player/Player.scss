@@ -1,0 +1,95 @@
+.player-view {
+  height: 100%;
+  font-family: Montserrat, sans-serif;
+
+  .screen {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .status-bar {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      min-height: 3.125rem;
+      background: #fff;
+      border: 0 solid rgba(0, 0, 0, 0.15);
+      border-width: 0 0 0.1875rem;
+      font-weight: 700;
+      font-size: 1.125rem;
+      line-height: 2.625;
+      color: #333;
+
+      .status-bar__item {
+        margin: 0 0.625rem;
+        font-weight: 700;
+        font-size: 1.25rem;
+
+        .status-bar__game-pin {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          text-transform: uppercase;
+          white-space: nowrap;
+        }
+
+        .status-bar__username {
+          display: none;
+          -webkit-flex: 1 0 auto;
+          -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+          text-align: right;
+        }
+      }
+
+      .status-bar--footer {
+        border-width: 0.1875rem 0 0;
+      }
+    }
+
+    .screen__main {
+      display: flex;
+      -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+      flex: 1 0 auto;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      padding: 0 0.625rem;
+      text-align: center;
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin: 0;
+        line-height: normal;
+        text-transform: none;
+        text-shadow: none;
+        color: #fff;
+      }
+
+      h1 {
+        font-size: 3.5rem;
+        text-rendering: optimizeLegibility;
+      }
+
+      h2.instructions__subheader {
+        margin-top: 1.5rem;
+        font-size: 1.5rem;
+        text-rendering: optimizeSpeed;
+      }
+    }
+
+    .instructions {
+      background-color: #66bf39;
+    }
+  }
+}

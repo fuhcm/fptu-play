@@ -11,7 +11,13 @@ export default new Router({
       path: "/",
       name: "index",
       component: () =>
-        import(/* webpackChunkName: "index" */ "./views/Index.vue")
+        import(/* webpackChunkName: "index" */ "./views/index/Index.vue")
+    },
+    {
+      path: "/player",
+      name: "player",
+      component: () =>
+        import(/* webpackChunkName: "player" */ "./views/player/Player.vue")
     }
   ]
 });
