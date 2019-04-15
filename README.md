@@ -1,4 +1,4 @@
-# FPTU Play, Kahoot clone
+# FPTU Quiz, Kahoot clone
 
 ## Project setup
 
