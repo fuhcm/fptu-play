@@ -37,21 +37,21 @@
               <v-text-field
                 required
                 v-model="input"
-                :placeholder="pinValid ? 'Nickname' : 'Game PIN'"
+                :placeholder="pinValid ? 'Nickname' : 'Quiz PIN'"
                 solo
               ></v-text-field>
-              <v-btn type="submit" block large>
-                {{ pinValid ? "OK, go!" : "Enter" }}
-              </v-btn>
+              <v-btn type="submit" block large>{{
+                pinValid ? "OK, go!" : "Enter"
+              }}</v-btn>
             </form>
           </div>
         </div>
 
         <div class="wrapper-bottom">
           <p>
-            Create your own game for FREE at
+            Create your own quiz for FREE at
             <strong>
-              <a href="https://play.fptu.tech">play.fptu.tech</a>
+              <a href="https://quiz.fptu.tech">quiz.fptu.tech</a>
             </strong>
           </p>
         </div>
