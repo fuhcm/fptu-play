@@ -2,20 +2,10 @@
   <div class="main-view">
     <v-app id="loading" v-if="loading">
       <v-layout row justify-center>
-        <v-dialog
-          v-model="loading"
-          persistent
-          fullscreen
-          content-class="loading-dialog"
-        >
+        <v-dialog v-model="loading" persistent fullscreen content-class="loading-dialog">
           <v-container fill-height>
             <v-layout row justify-center align-center>
-              <v-progress-circular
-                indeterminate
-                :size="100"
-                :width="15"
-                color="white"
-              ></v-progress-circular>
+              <v-progress-circular indeterminate :size="100" :width="15" color="white"></v-progress-circular>
             </v-layout>
           </v-container>
         </v-dialog>
@@ -40,9 +30,7 @@
                 :placeholder="pinValid ? 'Nickname' : 'Quiz PIN'"
                 solo
               ></v-text-field>
-              <v-btn type="submit" block large>{{
-                pinValid ? "OK, go!" : "Enter"
-              }}</v-btn>
+              <v-btn type="submit" block large>{{ pinValid ? "OK, go!" : "Enter" }}</v-btn>
             </form>
           </div>
         </div>
@@ -73,7 +61,7 @@ import firebase from "firebase";
 const db = firebase.firestore();
 
 export default {
-  data() {
+  data () {
     return {
       loading: false,
       text: "",
@@ -83,11 +71,11 @@ export default {
       games: []
     };
   },
-  created: function() {
+  created: function () {
     this.loading = true;
 
     setTimeout(
-      function() {
+      function () {
         this.loading = false;
       }.bind(this),
       600
@@ -98,12 +86,12 @@ export default {
     });
   },
   methods: {
-    submitForm: function() {
+    submitForm: function () {
       if (!this.pinValid) {
         this.loading = true;
 
         setTimeout(
-          function() {
+          function () {
             this.loading = false;
 
             if (this.games.findIndex(e => e.pin === this.input) !== -1) {
@@ -121,7 +109,7 @@ export default {
         this.loading = true;
 
         setTimeout(
-          function() {
+          function () {
             this.loading = false;
             window.localStorage.setItem("nickname", this.input);
             this.$router.push("/player");

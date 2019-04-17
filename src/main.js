@@ -16,11 +16,8 @@ const firebaseConfig = {
 };
 
 firebase.initializeApp(firebaseConfig);
-const db = firebase.firestore();
 
 Vue.config.productionTip = false;
-
-Vue.firebase;
 
 new Vue({
   router,
@@ -29,15 +26,3 @@ new Vue({
 }).$mount("#app");
 
 Vue.use(firestorePlugin);
-
-new Vue({
-  data: {
-    // Usually an array for collection
-    todos: [],
-    // and null for documents
-    currentTodo: null
-  },
-  firestore: {
-    games: db.collection("games")
-  }
-});

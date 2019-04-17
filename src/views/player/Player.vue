@@ -19,7 +19,7 @@
 
 <script>
 export default {
-  data: function() {
+  data: function () {
     return {
       pin: window.localStorage.getItem("pin") || "123456",
       nickname: window.localStorage.getItem("nickname") || "guest"
